@@ -1,0 +1,71 @@
+import { EventData, EventStatus, LocationType, StatMetric } from './types';
+
+export const STATS: StatMetric[] = [
+  { label: 'Total event', value: 5, iconType: 'calendar' },
+  { label: 'Published', value: 3, iconType: 'eye' },
+  { label: 'Total Registrants', value: 615, iconType: 'users' },
+  { label: 'Total Revenue', value: '$15,190', iconType: 'money' },
+];
+
+export const EVENTS: EventData[] = [
+  {
+    id: '1',
+    title: 'Startup Pitch Competition 2026',
+    category: 'Competition',
+    date: 'Mar 15',
+    locationType: LocationType.Offline,
+    status: EventStatus.Published,
+    registered: 342,
+    capacity: 500,
+    revenue: 8550,
+    imageUrl: 'https://picsum.photos/id/20/800/400',
+  },
+  {
+    id: '2',
+    title: 'UX Design Workshop',
+    category: 'Competition',
+    date: 'Mar 22',
+    locationType: LocationType.Online,
+    status: EventStatus.Published,
+    registered: 128,
+    capacity: 200,
+    revenue: 3840,
+    imageUrl: 'https://picsum.photos/id/3/800/400',
+  },
+  {
+    id: '3',
+    title: 'AI Hackathon: Build the Future',
+    category: 'Hackathon',
+    date: 'Apr 5',
+    locationType: LocationType.Hybrid,
+    status: EventStatus.Draft,
+    registered: 0,
+    capacity: 150,
+    revenue: 0,
+    imageUrl: 'https://picsum.photos/id/60/800/400',
+  },
+  {
+    id: '4',
+    title: 'Global Tech Conference 2025',
+    category: 'Conference',
+    date: 'May 10',
+    locationType: LocationType.Offline,
+    status: EventStatus.Published,
+    registered: 500,
+    capacity: 1000,
+    revenue: 50000,
+    imageUrl: 'https://picsum.photos/id/180/800/400',
+  },
+  {
+    id: '5',
+    title: 'Blockchain & Web3 Summit',
+    category: 'Summit',
+    date: 'Jan 20',
+    locationType: LocationType.Offline,
+    status: EventStatus.Closed,
+    registered: 150,
+    capacity: 150,
+    revenue: 15000,
+    imageUrl: 'https://picsum.photos/id/119/800/400',
+  }
+];
